@@ -1,2 +1,3 @@
-# Measuring-the-conservancy-of-plants
+# Measuring the conservancy of plants
+
 Data and code supporting my work in quantitative botany.
