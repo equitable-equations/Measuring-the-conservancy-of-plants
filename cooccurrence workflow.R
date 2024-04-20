@@ -6,12 +6,12 @@ library(fqar)
 
 # download raw data
 
-chic_ass <- download_assessment_list(80) 
+chic_assm <- download_assessment_list(80) 
 chic_trans <- download_transect_list(80)
 
 # build co-occurrence data set 
 
-ass_invs <- assessment_list_inventory(chic_ass)
+assm_invs <- assessment_list_inventory(chic_assm)
 trans_invs <- transect_list_inventory(chic_trans) # different format
 
 chic_db <- download_database(80)
@@ -47,6 +47,7 @@ chic_sm <- filter(chic_co_sum, target_species_n >= 3) # remove underrepresented 
 
 # uncomment to update and overwrite existing cooccurrence summary:
 # write_csv(chic_sm, "chicago_cooccurrences_summary.csv") 
+
 
 
 # Analysis (rough and under construction)
